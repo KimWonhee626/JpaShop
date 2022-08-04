@@ -1,4 +1,7 @@
 package jpabook.jpashop.domain;
 
-public class OrderStatus {
+import javax.persistence.Enumerated;
+
+public enum OrderStatus {
+    ORDER, CANCLE
 }
