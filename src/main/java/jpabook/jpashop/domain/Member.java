@@ -22,6 +22,7 @@ public class Member {
     @OneToMany(mappedBy = "member") // Order의 member객체가 연관관계 주인
     private List<Order> orders = new ArrayList<>();
 
+
     public Long getId() {
         return id;
     }
