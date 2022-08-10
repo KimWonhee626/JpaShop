@@ -3,10 +3,10 @@ package jpabook.jpashop.domain;
 import javax.persistence.*;
 
 @Entity
-public class Delivery {
+public class Delivery extends BaseEntity{
 
     @Id @GeneratedValue
-    @Column(name = "DELEVERY_ID")
+    @Column(name = "DELIVERY_ID")
     private long id;
 
     @OneToOne(mappedBy = "delivery")

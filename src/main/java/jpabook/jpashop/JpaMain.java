@@ -1,5 +1,6 @@
 package jpabook.jpashop;
 
+import jpabook.jpashop.domain.Movie;
 import jpabook.jpashop.domain.Order;
 import jpabook.jpashop.domain.OrderItem;
 
@@ -17,6 +18,14 @@ public class JpaMain {
         tx.begin();
 
         try {
+            Movie movie = new Movie();
+            movie.setActor("Wonhee");
+            movie.setDirector("Junyoung");
+            em.persist(movie);
+
+
+
+
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
